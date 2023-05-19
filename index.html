@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>BIZZCORPY</title>
+  </head>
+  <body>
+    <section class="nav container-fluid">
+      <div
+        style="background: rgba(6, 42, 70, 0.8); z-index: 5; min-width: 100vw"
+        class="container-fluid"
+      >
+        <div class="d-flex justify-content-between pt-4 container">
+          <div>
+            <h1 class="text-white logo">
+              BIZZCORPY<span class="text-primary" style="font-weight: bolder"
+                >.</span
+              >
+            </h1>
+          </div>
+
+          <div class="d-flex d-none">
+            <nav class="top-nav d-flex" id="parent">
+              <ul class="text-white list-unstyled text-uppercase menu d-flex">
+                <li>
+                  Home<i
+                    class="fa fa-angle-down pl-2"
+                    style="font-size: 24px"
+                  ></i>
+                  <ul
+                    class="list-unstyled text-dark bg-white mt-3 text-capitalize"
+                  >
+                    <li>Home Default</li>
+                    <li>Home Slider</li>
+                    <li>Home Particles</li>
+                    <li>Home Video</li>
+                  </ul>
+                </li>
+                <li>
+                  Pages<i
+                    class="fa fa-angle-down pl-2"
+                    style="font-size: 24px"
+                  ></i>
+                  <ul
+                    class="list-unstyled bg-white text-dark mt-3 text-capitalize"
+                  >
+                    <li>Services</li>
+                    <li>Service Details</li>
+                    <li>About Us</li>
+                  </ul>
+                </li>
+                <li>
+                  projects<i
+                    class="fa fa-angle-down pl-2"
+                    style="font-size: 24px"
+                  ></i>
+                  <ul
+                    class="list-unstyled bg-white text-dark mt-3 text-capitalize"
+                    style="margin-left: 2.5px"
+                  >
+                    <li>Projects</li>
+                    <li>Project Details</li>
+                  </ul>
+                </li>
+                <li>
+                  Blog<i
+                    class="fa fa-angle-down pl-2"
+                    style="font-size: 24px"
+                  ></i>
+
+                  <ul
+                    class="list-unstyled bg-white text-dark mt-3 text-capitalize"
+                    style="margin-left: -1px"
+                  >
+                    <li>Blog</li>
+                    <li>Blog Grid</li>
+                    <li>Blog Sidebar</li>
+                  </ul>
+                </li>
+                <li>Contact</li>
+                <li class="norotate">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </li>
+                <li class="pt-1 btn-quote">
+                  <a href="#" class="btn text-white btn-transparent mt-0 border"
+                    >Get A Quote</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="list-unstyled text-white menu-hide d-flex">
+              <li class="norotate px-3 py-2">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </li>
+              <li class="px-3 py-2 pr-4">
+                <i
+                  class="fa fa-bars"
+                  style="font-size: 24px"
+                  onclick="openMenu()"
+                ></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="container-fluid p-5 d-none" id="mobileMenu">
+            <nav>
+              <ul class="list-unstyled d-flex flex-column bg-light mobile-menu">
+                <li class="p-3">
+                  Home<i
+                    class="fa fa-angle-down pl-2 mt-0"
+                    style="font-size: 24px; position: fixed"
+                  ></i>
+                  <ul
+                    class="list-unstyled text-dark bg-white mt-3 text-capitalize p-2"
+                  >
+                    <li class="p-2">Home Default</li>
+                    <li class="p-2">Home Slider</li>
+                    <li class="p-2">Home Particles</li>
+                    <li class="p-2">Home Video</li>
+                  </ul>
+                </li>
+                <li class="p-3">
+                  Pages<i
+                    class="fa fa-angle-down pl-2"
+                    style="font-size: 24px; position: fixed"
+                  ></i>
+                  <ul
+                    class="list-unstyled bg-white text-dark mt-3 text-capitalize p-2"
+                  >
+                    <li class="p-2">Services</li>
+                    <li class="p-2">Service Details</li>
+                    <li class="p-2">About Us</li>
+                  </ul>
+                </li>
+                <li class="p-3">
+                  Projects<i
+                    class="fa fa-angle-down pl-2"
+                    style="font-size: 24px; position: fixed"
+                  ></i>
+                  <ul
+                    class="list-unstyled bg-white text-dark mt-3 text-capitalize p-2"
+                  >
+                    <li class="p-2">Projects</li>
+                    <li class="p-2">Project Details</li>
+                  </ul>
+                </li>
+                <li class="p-3">
+                  Blog<i
+                    class="fa fa-angle-down pl-4"
+                    style="font-size: 24px; position: fixed"
+                  ></i>
+                  <ul
+                    class="list-unstyled bg-white text-dark mt-3 text-capitalize p-2"
+                  >
+                    <li class="p-2">Blog</li>
+                    <li class="p-2">Blog Grid</li>
+                    <li class="p-2">Blog Sidebar</li>
+                  </ul>
+                </li>
+                <li class="p-3">Contact</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="container mt-5 bg-content">
+          <h4 class="my-3 best-solution">
+            <span class="badge bg-light px-4 py-3">Best Solution Company</span>
+          </h4>
+          <h1 class="text-white my-4 font-poppins">
+            The best solution <br />is to choose us
+          </h1>
+          <p class="text-light w-50">
+            If you are going to use a passage of Lorem Ipsum, you need to be
+            sure there isn't anything embarrassing hidden in the middle of text.
+          </p>
+          <a
+            href="#"
+            class="getoffer btn px-5 py-2 text-white my-4 bg-btn btn-lg"
+            >Get Offer</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="contact container border-bottom">
+      <div class="row justify-content-center align-items-center p-3 flex-wrap">
+        <div class="col-lg-4">
+          <div class="d-flex p-2 justify-content-center">
+            <div>
+              <i class="fa fa-map-marker fa-2x" style="font-size: 36px"></i>
+            </div>
+            <div>
+              <h5 style="font-weight: bolder" class="pl-3">Address :</h5>
+              <p class="text-muted pl-3">1073 W Stephen Ave , clawson</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-none d-xl-block">
+          <div class="d-flex p-2 justify-content-center">
+            <div>
+              <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h5 style="font-weight: bolder" class="pl-3">Call Us :</h5>
+              <p class="text-muted pl-3">+1 200-222-4444</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex p-2 justify-content-center">
+            <div>
+              <i class="fa fa-envelope fa-2x"></i>
+            </div>
+            <div>
+              <h5 style="font-weight: bolder" class="pl-3">Email :</h5>
+              <p class="text-muted pl-3">khalasjigar0861@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experience container my-3">
+      <div class="row justify-content-center align-items-center mt-5">
+        <div class="col-md-6">
+          <p class="text-primary h5">About Us</p>
+          <p style="font-weight: bolder" class="h1 mt-1 font-25">
+            17 Years of experience
+          </p>
+          <p style="font-weight: bolder" class="h1 font-25">
+            <i class="text-primary">Customer</i> Satisfaction
+          </p>
+          <p class="text-muted mt-4 text-justify">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. There are many
+            variations of passages of Lorem Ipsum available, but the majority
+            have suffered alteration in some form, by injected humour, or
+            randomised words which don't look even slightly believable.
+          </p>
+          <div class="mt-4">
+            <a
+              href="#"
+              onclick="openText('1')"
+              class="px-3 py-3 rounded active text-decoration-none border"
+              id="link1"
+              >Our Vision</a
+            >
+            <a
+              href="#"
+              onclick="openText('2')"
+              class="px-3 py-3 rounded text-decoration-none border"
+              id="link2"
+              >Our Mission</a
+            >
+          </div>
+
+          <p class="text-muted mt-4 text-justify text-muted" id="i1">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+          <p class="text-muted mt-4 text-justify text-muted d-none" id="i2">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="./about-img.jpg" class="img-fluid" />
+        </div>
+      </div>
+    </section>
+    <section class="container idea mt-5">
+      <h1 class="text-center service">Our Services</h1>
+      <p class="text-center mt-4 display-5 w-75 w-md-50 mx-auto">
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at it's layout.
+      </p>
+      <div class="row mt-5">
+        <div class="col-md-4 mt-3">
+          <div class="card shadow">
+            <div class="card-body">
+              <img
+                src="./training_ideas.png"
+                class="img-fluid my-3 d-block mx-auto"
+              />
+              <p class="card-title text-center h5" style="font-weight: bolder">
+                Trading Ideas
+              </p>
+              <p class="card-text text-muted text-justify my-2">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at it's layout.
+              </p>
+
+              <div class="text-center py-2">
+                <a href="#" class="btn btn-outline-primary text-center"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card shadow">
+            <div class="card-body">
+              <img
+                src="./business_strategy.png"
+                class="img-fluid d-block mx-auto"
+              />
+              <h5
+                class="card-title text-center mt-2"
+                style="font-weight: bolder"
+              >
+                Business Strategy
+              </h5>
+              <p class="card-text text-muted text-justify my-2">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at it's layout.
+              </p>
+
+              <div class="text-center py-2">
+                <a href="#" class="btn btn-outline-primary text-center"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card shadow">
+            <div class="card-body">
+              <img
+                src="./project_architecture.png"
+                class="img-fluid d-block mx-auto"
+              />
+              <p
+                class="card-title text-center mt-2 h5"
+                style="font-weight: bolder"
+              >
+                Project Architecture
+              </p>
+              <p class="card-text text-muted text-justify my-2">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at it's layout.
+              </p>
+
+              <div class="text-center py-2">
+                <a href="#" class="btn btn-outline-primary text-center"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="card shadow">
+            <div class="card-body">
+              <img
+                src="./investment.png"
+                class="img-fluid d-block mx-auto my-2"
+              />
+              <h5
+                class="h5 card-title text-center mt-1"
+                style="font-weight: bolder"
+              >
+                Investment Consulting
+              </h5>
+
+              <p class="card-text text-muted text-justify my-2">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at it's layout.
+              </p>
+
+              <div class="text-center py-2">
+                <a href="#" class="btn btn-outline-primary text-center"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card mb-2 shadow">
+            <div class="card-body">
+              <img
+                src="./dealership.png"
+                class="img-fluid d-block mx-auto my-2"
+              />
+              <h5
+                class="h5 card-title text-center mt-3"
+                style="font-weight: bolder"
+              >
+                Dealership Agreement
+              </h5>
+
+              <p class="card-text text-muted text-justify my-2">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at it's layout.
+              </p>
+              <div class="text-center py-2">
+                <a href="#" class="btn btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3">
+          <div class="card shadow">
+            <div class="card-body">
+              <img
+                src="./business_strategy.png"
+                class="img-fluid d-block mx-auto my-2"
+              />
+              <h5 class="h5 card-title text-center" style="font-weight: bolder">
+                Business Partnership
+              </h5>
+
+              <p class="card-text text-muted text-justify my-2">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at it's layout.
+              </p>
+              <div class="text-center py-2">
+                <a href="#" class="btn btn-outline-primary text-center"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="potential bg-blue p-2 p-sm-5 container-fluid mt-3">
+      <h1 class="text-center text-white font-20">
+        International Customer <br /><span class="border-bottom-"
+          >Potential</span
+        >
+      </h1>
+      <p class="text-center text-white mt-4 display-5 w-50 mx-auto">
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at it's layout.
+      </p>
+      <section class="last-cards">
+        <div class="last_cards_first_div">
+          <div class="row mt-3 custom_row">
+            <div class="col-sm-6 col-md-4 mt-3">
+              <div class="card">
+                <div class="card-body p-0">
+                  <div>
+                    <img src="./potential-img-1.jpg" class="img-fluid" />
+                  </div>
+                  <h4 class="h4 text-center my-3">
+                    Domestic Production <br />Potential
+                  </h4>
+                  <h2 class="h2 text-center my-3 text-darkblue">650</h2>
+                  <p class="text-center">BILLION/TONS</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 mt-3">
+              <div class="card">
+                <div class="card-body p-0">
+                  <div>
+                    <img src="./potential-img-2.jpg" class="img-fluid" />
+                  </div>
+                  <h4 class="h4 text-center my-3">
+                    Overseas Production <br />Potential
+                  </h4>
+                  <h2 class="h2 text-center my-3 text-darkblue">780</h2>
+                  <p class="text-center">BILLION/TONS</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 mt-3">
+              <div class="card">
+                <div class="card-body p-0">
+                  <div>
+                    <img src="./potential-img-3.jpg" class="img-fluid" />
+                  </div>
+                  <h4 class="h4 text-center my-3">
+                    International Production <br />Capacity
+                  </h4>
+                  <h2 class="text-center text-darkblue my-3">950</h2>
+                  <p class="text-center">BILLION/TONS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script>
+      const openText = (x) => {
+        let id = "i" + x;
+        let link = "link" + x;
+        let targetLink = document.getElementById(link);
+        let target = document.getElementById(id);
+        if (x === "1") {
+          let target2 = document.getElementById("i2");
+          let targetLink2 = document.getElementById("link2");
+          target.classList.remove("d-none");
+          target2.classList.add("d-none");
+          target2.classList.remove("active");
+          targetLink2.classList.remove("active");
+          targetLink.classList.add("active");
+        } else {
+          let target1 = document.getElementById("i1");
+          let targetLink1 = document.getElementById("link1");
+          target.classList.remove("d-none");
+          target1.classList.add("d-none");
+          targetLink.classList.add("active");
+          targetLink1.classList.remove("active");
+        }
+      };
+      const openMenu = () => {
+        let mobileMenu = document.getElementById("mobileMenu");
+        if (mobileMenu.classList.contains("d-none")) {
+          mobileMenu.classList.remove("d-none");
+        } else {
+          mobileMenu.classList.add("d-none");
+        }
+      };
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
