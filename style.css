@@ -181,6 +181,10 @@ a:hover
     .potential h1{
         text-align: start;
     }
+    .bg-content 
+    {
+        margin-top: 20% !important;
+    }
     .potential h1{
         font-size: 20px;
     }
@@ -217,15 +221,15 @@ a:hover
     }
     .best-solution .px-4
     {
-        padding-inline: 4px !important;
+        padding-inline: 5px !important;
     }
     .best-solution .py-3
     {
-        padding-block : 4px !important;
+        padding-block : 5px !important;
     }
     .bg-content 
     {
-        margin-top: -30px !important;
+        margin-top: 20% !important;
     }
     .font-poppins
     {
